@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-03T13:09:19 IST" name="Suite" finished-at="2022-03-03T13:09:29 IST" duration-ms="10152">
+    <groups>
+    </groups>
+    <test started-at="2022-03-03T13:09:19 IST" name="ChromeTest" finished-at="2022-03-03T13:09:29 IST" duration-ms="10152">
+      <class name="shifts7.testclass2">
+        <test-method is-config="true" signature="launchthebrowser(java.lang.String)[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:19 IST" name="launchthebrowser" finished-at="2022-03-03T13:09:21 IST" duration-ms="1878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchthebrowser -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:21 IST" name="launchBrowser" finished-at="2022-03-03T13:09:21 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:21 IST" name="loginIntoApplication" finished-at="2022-03-03T13:09:29 IST" duration-ms="8112" status="FAIL">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/apache/poi/ss/usermodel/WorkbookProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookProvider
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+at java.base/java.lang.Class.forName0(Native Method)
+at java.base/java.lang.Class.forName(Class.java:467)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initFactory(WorkbookFactory.java:349)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initXssf(WorkbookFactory.java:336)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:255)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:221)
+at Utils.Utility.getDatafromeExcel(Utility.java:21)
+at shifts7.testclass2.loginIntoApplication(testclass2.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.WorkbookProvider
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method signature="verifytheDashBoard()[pri:1, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="verifytheDashBoard" finished-at="2022-03-03T13:09:29 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/apache/poi/ss/usermodel/WorkbookProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookProvider
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+at java.base/java.lang.Class.forName0(Native Method)
+at java.base/java.lang.Class.forName(Class.java:467)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initFactory(WorkbookFactory.java:349)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initXssf(WorkbookFactory.java:336)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:255)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:221)
+at Utils.Utility.getDatafromeExcel(Utility.java:21)
+at shifts7.testclass2.loginIntoApplication(testclass2.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.WorkbookProvider
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheDashBoard -->
+        <test-method is-config="true" signature="LogOutFromApplication(org.testng.ITestResult)[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="LogOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1646293169940" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutFromApplication -->
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="loginIntoApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1646293169947" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method signature="verifytheSchedule()[pri:2, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="verifytheSchedule" finished-at="2022-03-03T13:09:29 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/apache/poi/ss/usermodel/WorkbookProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookProvider
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+at java.base/java.lang.Class.forName0(Native Method)
+at java.base/java.lang.Class.forName(Class.java:467)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initFactory(WorkbookFactory.java:349)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initXssf(WorkbookFactory.java:336)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:255)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:221)
+at Utils.Utility.getDatafromeExcel(Utility.java:21)
+at shifts7.testclass2.loginIntoApplication(testclass2.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.WorkbookProvider
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheSchedule -->
+        <test-method is-config="true" signature="LogOutFromApplication(org.testng.ITestResult)[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="LogOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1646293169954" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutFromApplication -->
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="loginIntoApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1646293169957" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method signature="verifytheLogBook()[pri:3, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="verifytheLogBook" finished-at="2022-03-03T13:09:29 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/apache/poi/ss/usermodel/WorkbookProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookProvider
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+at java.base/java.lang.Class.forName0(Native Method)
+at java.base/java.lang.Class.forName(Class.java:467)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initFactory(WorkbookFactory.java:349)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initXssf(WorkbookFactory.java:336)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:255)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:221)
+at Utils.Utility.getDatafromeExcel(Utility.java:21)
+at shifts7.testclass2.loginIntoApplication(testclass2.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.WorkbookProvider
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheLogBook -->
+        <test-method is-config="true" signature="LogOutFromApplication(org.testng.ITestResult)[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="LogOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1646293169967" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutFromApplication -->
+        <test-method is-config="true" signature="loginIntoApplication()[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="loginIntoApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1646293169970" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginIntoApplication -->
+        <test-method signature="verifytheemployeetab()[pri:4, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="verifytheemployeetab" finished-at="2022-03-03T13:09:29 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[org/apache/poi/ss/usermodel/WorkbookProvider]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookProvider
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+at java.base/java.lang.Class.forName0(Native Method)
+at java.base/java.lang.Class.forName(Class.java:467)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initFactory(WorkbookFactory.java:349)
+at org.apache.poi.ss.usermodel.WorkbookFactory.initXssf(WorkbookFactory.java:336)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:255)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:221)
+at Utils.Utility.getDatafromeExcel(Utility.java:21)
+at shifts7.testclass2.loginIntoApplication(testclass2.java:51)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.WorkbookProvider
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 49 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytheemployeetab -->
+        <test-method is-config="true" signature="LogOutFromApplication(org.testng.ITestResult)[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="LogOutFromApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1646293169979" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogOutFromApplication -->
+        <test-method is-config="true" signature="QuittheBrowser()[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="QuittheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1646293169983" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QuittheBrowser -->
+        <test-method is-config="true" signature="quitTheBrowser()[pri:0, instance:shifts7.testclass2@31e5415e]" started-at="2022-03-03T13:09:29 IST" name="quitTheBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1646293169986" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitTheBrowser -->
+      </class> <!-- shifts7.testclass2 -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
